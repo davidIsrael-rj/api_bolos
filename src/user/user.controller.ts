@@ -11,4 +11,9 @@ export class UserController{
     async read(){
         return {users: []}
     }
+
+    @Get(':id')
+    async readOne(){
+        return {user:{}}
+    }
 }
