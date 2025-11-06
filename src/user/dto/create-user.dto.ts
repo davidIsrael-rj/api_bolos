@@ -18,5 +18,7 @@ export class createUserDTO{
     }, {
         message:"A senha deve conter mais de 6 caracteres"
     })
+    // @IsString()
+    // @MinLength(6)
     password:string;
 }
