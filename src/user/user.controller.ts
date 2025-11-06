@@ -4,8 +4,8 @@ import { createUserDTO } from "./dto/create-user.dto";
 @Controller('users')
 export class UserController{
     @Post()
-    async create(@Body() body: createUserDTO){
-        return{body};
+    async create(@Body() {name,email, password}: createUserDTO){
+        return{name, email, password};
     }
 
     @Get()
